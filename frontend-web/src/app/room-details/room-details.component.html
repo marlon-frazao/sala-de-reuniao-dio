@@ -1,1 +1,18 @@
-<p>room-details works!</p>
+<h2>Room Details</h2>
+
+<hr />
+<div *ngIf="room">
+  <div>
+    <label><b>Name </b></label> {{room.name}}
+  </div>
+  <div>
+    <label><b>Start</b></label> {{room.start}}
+  </div>
+  <div>
+    <label><b>End</b></label> {{room.end}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Room List</button><br>

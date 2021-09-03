@@ -1,1 +1,21 @@
-<p>update-room works!</p>
+<h3>Update Room</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="room.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Start</label>
+      <input type="text" class="form-control" id="start" required [(ngModel)]="room.start" name="start">
+    </div>
+
+    <div class="form-group">
+      <label for="name">End</label>
+      <input type="text" class="form-control" id="end" required [(ngModel)]="room.end" name="end">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
